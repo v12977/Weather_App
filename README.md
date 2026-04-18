@@ -1,16 +1,123 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TEST CHANGE 🚀
+# 🌦️ Weather App (React + Vite)
 
-Currently, two official plugins are available:
+A responsive weather application built using **React (Vite)** that allows users to search for any city and view real-time weather information like temperature, humidity, and weather conditions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+👉 https://weather-app-rosy-eta-28.vercel.app/
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Features
+
+* 🔍 Search weather by city name
+* 🌡️ Displays temperature, min/max temperature, and feels like
+* 💧 Shows humidity and weather condition
+* 🖼️ Dynamic images based on weather (hot, cold, rainy)
+* ⚠️ Error handling for invalid city names
+* ⚡ Fast performance using Vite
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** React.js (Vite)
+* **UI Library:** Material UI (MUI)
+* **API:** OpenWeatherMap API
+* **Deployment:** Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│── App.jsx
+│── WeatherApp.jsx
+│── SearchBox.jsx
+│── InfoBox.jsx
+│── App.css
+│── SearchBox.css
+│── InfoBox.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/YOUR_USERNAME/weather-app.git
+cd weather-app
+```
+
+### 2️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 3️⃣ Run the app
+
+```
+npm run dev
+```
+
+---
+
+## 🔑 API Configuration
+
+This project uses OpenWeatherMap API.
+
+Create a `.env` file:
+
+```
+VITE_API_KEY=your_api_key_here
+```
+
+Then update:
+
+```js
+const API_KEY = import.meta.env.VITE_API_KEY;
+```
+
+---
+
+## 🚀 Deployment
+
+Deployed on **Vercel**
+
+* Build Command: `npm run build`
+* Output Directory: `dist`
+
+---
+
+## 🧠 Learning Highlights
+
+* API integration using async/await
+* State management using React Hooks
+* Component-based architecture
+* Error handling in UI
+* Using Material UI components
+
+---
+
+## 👨‍💻 Author
+
+**Vikash Kumar**
+
+---
+
+## 📌 Future Improvements
+
+* Add loading spinner
+* Add weather icons
+* Add 5-day forecast
+* Improve UI/UX design
+
+---
